@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre nuestra amplia gama de productos tecnológicos: tarjetas gráficas, periféricos y más">
+    <title>Productos - TechStore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>TechStore</h1>
+                </a>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                    <li class="dropdown">
+                        <a href="productos.html" class="active">Productos <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#tarjetas">Tarjetas Gráficas</a></li>
+                            <li><a href="#perifericos">Periféricos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="servicios.html">Servicios <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicios.html#reparacion">Reparación</a></li>
+                            <li><a href="servicios.html#mantenimiento">Mantenimiento</a></li>
+                            <li><a href="servicios.html#web">Desarrollo Web</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nuestros Productos</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Inicio</a> / <span>Productos</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-nav">
+                <ul>
+                    <li><a href="#tarjetas" class="category-link">Tarjetas Gráficas</a></li>
+                    <li><a href="#perifericos" class="category-link">Periféricos</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarjetas" class="product-section">
+        <div class="container">
+            <h2 class="section-title">Tarjetas Gráficas</h2>
+            <p class="section-description">Potencia tu experiencia de gaming y trabajo con nuestras tarjetas gráficas de última generación. Rendimiento excepcional para tus juegos y aplicaciones más exigentes.</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge new">Nuevo</span>
+                        <img src="img/productos/rtx4080.png" alt="NVIDIA RTX 4080">
+                    </div>
+                    <div class="product-info">
+                        <h3>NVIDIA RTX 4080 16GB</h3>
+                        <p class="product-description">Tarjeta gráfica de última generación para gaming 4K y creación de contenido profesional.</p>
+                        <div class="product-features">
+                            <p><i class="fas fa-microchip"></i> 16GB GDDR6X</p>
+                            <p><i class="fas fa-tachometer-alt"></i> Boost hasta 2.5GHz</p>
+                            <p><i class="fas fa-bolt"></i> DLSS 3 y Ray Tracing</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$22,799</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" data-modal="modal-rtx4080">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/productos/rtx4070.webp" alt="NVIDIA RTX 4070 Ti">
+                    </div>
+                    <div class="product-info">
+                        <h3>NVIDIA RTX 4070 Ti 12GB</h3>
+                        <p class="product-description">Excelente rendimiento para gaming a 1440p y 4K con un consumo energético optimizado.</p>
+                        <div class="product-features">
+                            <p><i class="fas fa-microchip"></i> 12GB GDDR6X</p>
+                            <p><i class="fas fa-tachometer-alt"></i> Boost hasta 2.7GHz</p>
+                            <p><i class="fas fa-bolt"></i> DLSS 3 y Ray Tracing</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$17,099</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" data-modal="modal-rtx4070">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge sale">Oferta</span>
+                        <img src="img/productos/rx7900.png" alt="AMD RX 7900 XT">
+                    </div>
+                    <div class="product-info">
+                        <h3>AMD Radeon RX 7900 XT 20GB</h3>
+                        <p class="product-description">Potencia bruta para gaming de alto nivel y trabajo creativo con tecnología AMD RDNA 3.</p>
+                        <div class="product-features">
+                            <p><i class="fas fa-microchip"></i> 20GB GDDR6</p>
+                            <p><i class="fas fa-tachometer-alt"></i> Boost hasta 2.5GHz</p>
+                            <p><i class="fas fa-bolt"></i> AMD FSR 3.0</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-old">$19,949</span>
+                            <span class="price">$18,049</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" data-modal="modal-rx7900">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/productos/rtx3070.png" alt="NVIDIA RTX 3070">
+                    </div>
+                    <div class="product-info">
+                        <h3>NVIDIA RTX 3070 8GB</h3>
+                        <p class="product-description">Gran relación calidad-precio para gaming a 1440p con soporte para Ray Tracing.</p>
+                        <div class="product-features">
+                            <p><i class="fas fa-microchip"></i> 8GB GDDR6</p>
+                            <p><i class="fas fa-tachometer-alt"></i> Boost hasta 1.8GHz</p>
+                            <p><i class="fas fa-bolt"></i> DLSS 2.0 y Ray Tracing</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$2,659</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" data-modal="modal-rtx3070">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="perifericos" class="product-section">
+        <div class="container">
+            <h2 class="section-title">Periféricos</h2>
+            <p class="section-description">Complementa tu equipo con nuestra selección de periféricos de alta calidad. Desde teclados mecánicos hasta ratones ergonómicos, tenemos todo lo que necesitas para mejorar tu experiencia.</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/productos/teclado-mecanico.png" alt="Teclado Mecánico RGB">
+                    </div>
+                    <div class="product-info">
+                        <h3>Steelseries Apex Pro TKL v2</h3>
+                        <p class="product-description">Teclado gaming con switches Cherry MX Red, retroiluminación RGB personalizable y estructura de aluminio.</p>
+                        <div class="product-features">
+                            <p><i class="fas fa-keyboard"></i> Switches Cherry MX Red</p>
+                            <p><i class="fas fa-lightbulb"></i> RGB 16.8M colores</p>
+                            <p><i class="fas fa-memory"></i> Memoria interna</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$1,519</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" data-modal="modal-steelseries">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge best">Top ventas</span>
+                        <img src="img/productos/mouse-gaming.webp" alt="Mouse Gaming Profesional">
+                    </div>
+                    <div class="product-info">
+                        <h3>Razer Cobra Pro</h3>
+                        <p class="product-description">Mouse ultrapreciso con sensor óptico de 25.600 DPI, peso ajustable y 8 botones programables.</p>
+                        <div class="product-features">
+                            <p><i class="fas fa-mouse"></i> Sensor 25.600 DPI</p>
+                            <p><i class="fas fa-weight"></i> Peso ajustable</p>
+                            <p><i class="fas fa-lightbulb"></i> RGB personalizable</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$1,899</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" data-modal="modal-razer">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/productos/auriculares.webp" alt="Auriculares Gaming">
+                    </div>
+                    <div class="product-info">
+                        <h3>Corsair Virtuoso Max</h3>
+                        <p class="product-description">Auriculares con sonido envolvente 7.1, micrófono con cancelación de ruido y almohadillas memory foam.</p>
+                        <div class="product-features">
+                            <p><i class="fas fa-headphones"></i> Sonido 7.1</p>
+                            <p><i class="fas fa-microphone"></i> Micrófono desmontable</p>
+                            <p><i class="fas fa-battery-full"></i> 20h autonomía</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$5,699</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" data-modal="modal-corsair">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge sale">Oferta</span>
+                        <img src="img/productos/monitor.webp" alt="Monitor Gaming 144Hz">
+                    </div>
+                    <div class="product-info">
+                        <h3>Samsung Odyssey G5 QHD</h3>
+                        <p class="product-description">Monitor QHD curvo con frecuencia de refresco de 144Hz, tiempo de respuesta de 1ms y compatible con G-Sync.</p>
+                        <div class="product-features">
+                            <p><i class="fas fa-desktop"></i> Panel VA QHD</p>
+                            <p><i class="fas fa-sync"></i> 144Hz</p>
+                            <p><i class="fas fa-bolt"></i> G-Sync compatible</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-old">$6,649</span>
+                            <span class="price">$5,699</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" data-modal="modal-samsung">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-help">
+        <div class="container">
+            <div class="help-content">
+                <div class="help-text">
+                    <h2>¿Necesitas ayuda para elegir?</h2>
+                    <p>Nuestros expertos en tecnología están a tu disposición para asesorarte y ayudarte a encontrar el producto perfecto para tus necesidades.</p>
+                    <a href="contacto.html" class="btn btn-secondary">Contactar con experto</a>
+                </div>
+                <div class="help-image">
+                    <img src="img/productos/asesoria.jpg" alt="Asesoramiento personalizado">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-faqs">
+        <div class="container">
+            <h2 class="section-title">Preguntas frecuentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuánto tiempo de garantía tienen los productos?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Todos nuestros productos cuentan con 2 años de garantía oficial del fabricante. Además, ofrecemos la posibilidad de extender la garantía hasta 4 años con nuestro servicio Premium.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Realizan envíos internacionales?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, realizamos envíos a toda America y Europa. Los gastos de envío varían según el país de destino y el peso del paquete.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Qué métodos de pago aceptan?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceptamos pagos con tarjeta de crédito/débito, PayPal, transferencia bancaria y financiación hasta en 36 meses (sujeto a aprobación).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-rtx4080" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2>NVIDIA RTX 4080 16GB</h2>
+                <span class="modal-badge new">Nuevo</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="img/productos/rtx4080.png" alt="NVIDIA RTX 4080">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-price">
+                        <span class="price">$22,799</span>
+                    </div>
+                    <div class="product-description">
+                        <p>La NVIDIA GeForce RTX 4080 es una tarjeta gráfica de última generación diseñada para gaming 4K y creación de contenido profesional. Con la arquitectura Ada Lovelace y 16GB de memoria GDDR6X, ofrece un rendimiento excepcional.</p>
+                    </div>
+                    <div class="detailed-specs">
+                        <h3>Especificaciones técnicas:</h3>
+                        <ul>
+                            <li><strong>Memoria:</strong> 16GB GDDR6X</li>
+                            <li><strong>Interfaz de memoria:</strong> 256-bit</li>
+                            <li><strong>Velocidad base:</strong> 2205 MHz</li>
+                            <li><strong>Velocidad boost:</strong> 2505 MHz</li>
+                            <li><strong>CUDA Cores:</strong> 9728</li>
+                            <li><strong>RT Cores:</strong> 76 (3ra gen)</li>
+                            <li><strong>Tensor Cores:</strong> 304 (4ta gen)</li>
+                            <li><strong>Consumo de energía:</strong> 320W</li>
+                            <li><strong>Conectores:</strong> 3x DisplayPort 1.4a, 1x HDMI 2.1</li>
+                        </ul>
+                    </div>
+                    <div class="modal-features">
+                        <h3>Características destacadas:</h3>
+                        <ul>
+                            <li>DLSS 3 con Frame Generation</li>
+                            <li>Ray Tracing de 3ra generación</li>
+                            <li>AV1 Encoding</li>
+                            <li>Reflex para menor latencia</li>
+                            <li>Broadcast para streaming profesional</li>
+                        </ul>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="contacto.html" class="btn btn-primary btn-large">Comprar ahora</a>
+                        <button class="btn btn-secondary modal-close-btn">Seguir viendo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-rtx4070" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2>NVIDIA RTX 4070 Ti 12GB</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="img/productos/rtx4070.webp" alt="NVIDIA RTX 4070 Ti">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-price">
+                        <span class="price">$17,099</span>
+                    </div>
+                    <div class="product-description">
+                        <p>La RTX 4070 Ti ofrece un excelente rendimiento para gaming a 1440p y 4K con un consumo energético optimizado. Perfecta para jugadores que buscan calidad y eficiencia.</p>
+                    </div>
+                    <div class="detailed-specs">
+                        <h3>Especificaciones técnicas:</h3>
+                        <ul>
+                            <li><strong>Memoria:</strong> 12GB GDDR6X</li>
+                            <li><strong>Interfaz de memoria:</strong> 192-bit</li>
+                            <li><strong>Velocidad base:</strong> 2310 MHz</li>
+                            <li><strong>Velocidad boost:</strong> 2610 MHz</li>
+                            <li><strong>CUDA Cores:</strong> 7680</li>
+                            <li><strong>RT Cores:</strong> 60 (3ra gen)</li>
+                            <li><strong>Tensor Cores:</strong> 240 (4ta gen)</li>
+                            <li><strong>Consumo de energía:</strong> 285W</li>
+                        </ul>
+                    </div>
+                    <div class="modal-features">
+                        <h3>Características destacadas:</h3>
+                        <ul>
+                            <li>DLSS 3 con Frame Generation</li>
+                            <li>Ray Tracing de 3ra generación</li>
+                            <li>Arquitectura Ada Lovelace</li>
+                            <li>Soporte para 4K gaming</li>
+                        </ul>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="contacto.html" class="btn btn-primary btn-large">Comprar ahora</a>
+                        <button class="btn btn-secondary modal-close-btn">Seguir viendo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-rx7900" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2>AMD Radeon RX 7900 XT 20GB</h2>
+                <span class="modal-badge sale">Oferta</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="img/productos/rx7900.png" alt="AMD RX 7900 XT">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-price">
+                        <span class="price-old">$19,949</span>
+                        <span class="price">$18,049</span>
+                    </div>
+                    <div class="product-description">
+                        <p>Potencia bruta para gaming de alto nivel y trabajo creativo con la nueva arquitectura AMD RDNA 3. Ofrece un rendimiento excepcional con una gran cantidad de memoria.</p>
+                    </div>
+                    <div class="detailed-specs">
+                        <h3>Especificaciones técnicas:</h3>
+                        <ul>
+                            <li><strong>Memoria:</strong> 20GB GDDR6</li>
+                            <li><strong>Interfaz de memoria:</strong> 320-bit</li>
+                            <li><strong>Velocidad base:</strong> 1855 MHz</li>
+                            <li><strong>Velocidad boost:</strong> 2395 MHz</li>
+                            <li><strong>Stream Processors:</strong> 5376</li>
+                            <li><strong>Compute Units:</strong> 84</li>
+                            <li><strong>Consumo de energía:</strong> 315W</li>
+                        </ul>
+                    </div>
+                    <div class="modal-features">
+                        <h3>Características destacadas:</h3>
+                        <ul>
+                            <li>AMD FSR 3.0</li>
+                            <li>Arquitectura RDNA 3</li>
+                            <li>Raytracing acelerado por hardware</li>
+                            <li>20GB de memoria para 4K</li>
+                            <li>Smart Access Memory</li>
+                        </ul>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="contacto.html" class="btn btn-primary btn-large">Comprar ahora</a>
+                        <button class="btn btn-secondary modal-close-btn">Seguir viendo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-rtx3070" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2>NVIDIA RTX 3070 8GB</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="img/productos/rtx3070.png" alt="NVIDIA RTX 3070">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-price">
+                        <span class="price">$2,659</span>
+                    </div>
+                    <div class="product-description">
+                        <p>Gran relación calidad-precio para gaming a 1440p con soporte para Ray Tracing. Una opción sólida para jugadores que buscan alto rendimiento sin comprometer el presupuesto.</p>
+                    </div>
+                    <div class="detailed-specs">
+                        <h3>Especificaciones técnicas:</h3>
+                        <ul>
+                            <li><strong>Memoria:</strong> 8GB GDDR6</li>
+                            <li><strong>Interfaz de memoria:</strong> 256-bit</li>
+                            <li><strong>Velocidad base:</strong> 1500 MHz</li>
+                            <li><strong>Velocidad boost:</strong> 1725 MHz</li>
+                            <li><strong>CUDA Cores:</strong> 5888</li>
+                            <li><strong>RT Cores:</strong> 46 (2da gen)</li>
+                            <li><strong>Tensor Cores:</strong> 184 (3ra gen)</li>
+                            <li><strong>Consumo de energía:</strong> 220W</li>
+                        </ul>
+                    </div>
+                    <div class="modal-features">
+                        <h3>Características destacadas:</h3>
+                        <ul>
+                            <li>DLSS 2.0</li>
+                            <li>Ray Tracing de 2da generación</li>
+                            <li>Arquitectura Ampere</li>
+                            <li>Excelente para 1440p gaming</li>
+                        </ul>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="contacto.html" class="btn btn-primary btn-large">Comprar ahora</a>
+                        <button class="btn btn-secondary modal-close-btn">Seguir viendo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-steelseries" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2>Steelseries Apex Pro TKL v2</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="img/productos/teclado-mecanico.png" alt="Steelseries Apex Pro TKL v2">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-price">
+                        <span class="price">$1,519</span>
+                    </div>
+                    <div class="product-description">
+                        <p>Teclado gaming mecánico tenkeyless con switches ajustables, retroiluminación RGB y construcción premium en aluminio. Diseñado para competición profesional.</p>
+                    </div>
+                    <div class="detailed-specs">
+                        <h3>Especificaciones técnicas:</h3>
+                        <ul>
+                            <li><strong>Switches:</strong> OmniPoint 2.0 ajustables</li>
+                            <li><strong>Actuación:</strong> 0.2mm - 3.8mm</li>
+                            <li><strong>Formato:</strong> Tenkeyless (87 teclas)</li>
+                            <li><strong>Iluminación:</strong> RGB por tecla</li>
+                            <li><strong>Conexión:</strong> USB-C removible</li>
+                            <li><strong>Polling rate:</strong> 8000Hz</li>
+                            <li><strong>Material:</strong> Aleación de aluminio</li>
+                        </ul>
+                    </div>
+                    <div class="modal-features">
+                        <h3>Características destacadas:</h3>
+                        <ul>
+                            <li>Switches magnéticos ajustables</li>
+                            <li>OLED Smart Display</li>
+                            <li>SteelSeries Engine software</li>
+                            <li>Rapid Trigger para gaming competitivo</li>
+                            <li>Reposamuñecas magnético incluido</li>
+                        </ul>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="contacto.html" class="btn btn-primary btn-large">Comprar ahora</a>
+                        <button class="btn btn-secondary modal-close-btn">Seguir viendo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-razer" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2>Razer Cobra Pro</h2>
+                <span class="modal-badge best">Top ventas</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="img/productos/mouse-gaming.webp" alt="Razer Cobra Pro">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-price">
+                        <span class="price">$1,899</span>
+                    </div>
+                    <div class="product-description">
+                        <p>Mouse gaming inalámbrico de alta precisión con sensor óptico de última generación. Diseño ergonómico ambidiestro con iluminación RGB personalizable.</p>
+                    </div>
+                    <div class="detailed-specs">
+                        <h3>Especificaciones técnicas:</h3>
+                        <ul>
+                            <li><strong>Sensor:</strong> Focus Pro 30K</li>
+                            <li><strong>DPI máximo:</strong> 30,000 DPI</li>
+                            <li><strong>IPS:</strong> 750 pulgadas por segundo</li>
+                            <li><strong>Aceleración:</strong> 70G</li>
+                            <li><strong>Botones:</strong> 10 programables</li>
+                            <li><strong>Batería:</strong> 90 horas sin RGB</li>
+                            <li><strong>Conectividad:</strong> 2.4GHz y Bluetooth 5.0</li>
+                        </ul>
+                    </div>
+                    <div class="modal-features">
+                        <h3>Características destacadas:</h3>
+                        <ul>
+                            <li>Razer HyperSpeed Wireless</li>
+                            <li>11 zonas RGB Chroma</li>
+                            <li>Switches ópticos Gen-3</li>
+                            <li>Grips laterales extraíbles</li>
+                            <li>Carga rápida e inalámbrica</li>
+                        </ul>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="contacto.html" class="btn btn-primary btn-large">Comprar ahora</a>
+                        <button class="btn btn-secondary modal-close-btn">Seguir viendo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-corsair" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2>Corsair Virtuoso Max</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="img/productos/auriculares.webp" alt="Corsair Virtuoso Max">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-price">
+                        <span class="price">$5,699</span>
+                    </div>
+                    <div class="product-description">
+                        <p>Auriculares gaming premium con sonido envolvente espacial y micrófono de grado profesional. Diseño elegante con materiales de alta calidad.</p>
+                    </div>
+                    <div class="detailed-specs">
+                        <h3>Especificaciones técnicas:</h3>
+                        <ul>
+                            <li><strong>Drivers:</strong> 50mm de grafeno</li>
+                            <li><strong>Respuesta de frecuencia:</strong> 20Hz - 40kHz</li>
+                            <li><strong>Impedancia:</strong> 32 Ohms @ 1kHz</li>
+                            <li><strong>Micrófono:</strong> Omnidireccional desmontable</li>
+                            <li><strong>Conectividad:</strong> USB, 3.5mm, Bluetooth</li>
+                            <li><strong>Batería:</strong> 20 horas</li>
+                            <li><strong>Peso:</strong> 382g</li>
+                        </ul>
+                    </div>
+                    <div class="modal-features">
+                        <h3>Características destacadas:</h3>
+                        <ul>
+                            <li>Sonido espacial Dolby Atmos</li>
+                            <li>Cancelación activa de ruido</li>
+                            <li>RGB iCUE personalizable</li>
+                            <li>Almohadillas memory foam premium</li>
+                            <li>Compatible con consolas y PC</li>
+                        </ul>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="contacto.html" class="btn btn-primary btn-large">Comprar ahora</a>
+                        <button class="btn btn-secondary modal-close-btn">Seguir viendo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-samsung" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2>Samsung Odyssey G5 QHD</h2>
+                <span class="modal-badge sale">Oferta</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="img/productos/monitor.webp" alt="Samsung Odyssey G5 QHD">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-price">
+                        <span class="price-old">$6,649</span>
+                        <span class="price">$5,699</span>
+                    </div>
+                    <div class="product-description">
+                        <p>Monitor gaming curvo QHD de 27" con alta frecuencia de refresco y tiempo de respuesta ultra rápido. Diseñado para gaming competitivo y entretenimiento inmersivo.</p>
+                    </div>
+                    <div class="detailed-specs">
+                        <h3>Especificaciones técnicas:</h3>
+                        <ul>
+                            <li><strong>Tamaño:</strong> 27 pulgadas</li>
+                            <li><strong>Resolución:</strong> 2560 x 1440 (QHD)</li>
+                            <li><strong>Panel:</strong> VA curvo 1000R</li>
+                            <li><strong>Frecuencia:</strong> 165Hz</li>
+                            <li><strong>Tiempo de respuesta:</strong> 1ms (MPRT)</li>
+                            <li><strong>Brillo:</strong> 350 cd/m²</li>
+                            <li><strong>HDR:</strong> HDR10</li>
+                        </ul>
+                    </div>
+                    <div class="modal-features">
+                        <h3>Características destacadas:</h3>
+                        <ul>
+                            <li>AMD FreeSync Premium</li>
+                            <li>G-Sync compatible</li>
+                            <li>Curvatura 1000R inmersiva</li>
+                            <li>HDR10 para mejor contraste</li>
+                            <li>Eye Saver Mode</li>
+                            <li>Flicker Free</li>
+                        </ul>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="contacto.html" class="btn btn-primary btn-large">Comprar ahora</a>
+                        <button class="btn btn-secondary modal-close-btn">Seguir viendo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TechStore</h3>
+                    <p>Tu tienda de confianza para tecnología y servicios informáticos.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="acerca.html">Acerca de</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Av de la Marina 205, Francisco Villa</li>
+                        <li><i class="fas fa-phone"></i> 6699946487</li>
+                        <li><i class="fas fa-envelope"></i> emozp@hotmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios profesionales de reparación, mantenimiento y desarrollo web en TechStore">
+    <title>Servicios - TechStore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>TechStore</h1>
+                </a>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                    <li class="dropdown">
+                        <a href="productos.html">Productos <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="productos.html#tarjetas">Tarjetas Gráficas</a></li>
+                            <li><a href="productos.html#perifericos">Periféricos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="servicios.html" class="active">Servicios <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#reparacion">Reparación</a></li>
+                            <li><a href="#mantenimiento">Mantenimiento</a></li>
+                            <li><a href="#web">Desarrollo Web</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nuestros Servicios</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Inicio</a> / <span>Servicios</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-nav">
+        <div class="container">
+            <div class="services-tabs">
+                <a href="#reparacion" class="service-tab">
+                    <i class="fas fa-tools"></i>
+                    <span>Reparación</span>
+                </a>
+                <a href="#mantenimiento" class="service-tab">
+                    <i class="fas fa-cogs"></i>
+                    <span>Mantenimiento</span>
+                </a>
+                <a href="#web" class="service-tab">
+                    <i class="fas fa-code"></i>
+                    <span>Desarrollo Web</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reparacion" class="service-section">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="service-title">
+                    <h2>Reparación de Equipos</h2>
+                    <p>Soluciones rápidas y efectivas para tus dispositivos</p>
+                </div>
+            </div>
+            
+            <div class="service-content">
+                <div class="service-description">
+                    <p>En TechStore contamos con técnicos certificados con años de experiencia en la reparación de todo tipo de dispositivos electrónicos. Ofrecemos diagnóstico gratuito y presupuesto sin compromiso.</p>
+                    <p>Nuestro objetivo es devolverte tu equipo en perfecto estado en el menor tiempo posible, utilizando siempre piezas originales y garantizando la calidad de nuestro trabajo.</p>
+                </div>
+                
+                <div class="service-features">
+                    <div class="service-feature">
+                        <i class="fas fa-laptop-medical"></i>
+                        <h3>Reparación de Ordenadores</h3>
+                        <p>Solucionamos problemas tanto de hardware como de software en portátiles y ordenadores de sobremesa de todas las marcas.</p>
+                    </div>
+                    <div class="service-feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Reparación de Dispositivos Móviles</h3>
+                        <p>Especialistas en la reparación de smartphones y tablets: cambio de pantalla, batería, micrófonos, altavoces, etc.</p>
+                    </div>
+                    <div class="service-feature">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Reparación de Consolas</h3>
+                        <p>Arreglamos todo tipo de consolas de videojuegos: PS5, Xbox, Nintendo Switch y modelos anteriores.</p>
+                    </div>
+                </div>
+                
+                <div class="service-benefits">
+                    <h3>¿Por qué elegir nuestro servicio de reparación?</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Diagnóstico gratuito</li>
+                        <li><i class="fas fa-check-circle"></i> Técnicos certificados</li>
+                        <li><i class="fas fa-check-circle"></i> Garantía de 6 meses en reparaciones</li>
+                        <li><i class="fas fa-check-circle"></i> Presupuesto previo sin compromiso</li>
+                        <li><i class="fas fa-check-circle"></i> Recogida a domicilio disponible</li>
+                    </ul>
+                </div>
+                
+                <div class="service-pricing">
+                    <h3>Tarifas</h3>
+                    <div class="pricing-table">
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+                                <h4>Diagnóstico</h4>
+                            </div>
+                            <div class="pricing-body">
+                                <p class="price">GRATIS</p>
+                                <ul>
+                                    <li>Análisis completo del equipo</li>
+                                    <li>Detección de problemas</li>
+                                    <li>Presupuesto detallado</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+                                <h4>Reparación Básica</h4>
+                            </div>
+                            <div class="pricing-body">
+                                <p class="price">Desde $949</p>
+                                <ul>
+                                    <li>Problemas de software</li>
+                                    <li>Instalación de componentes</li>
+                                    <li>Configuración del sistema</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+                                <h4>Reparación Avanzada</h4>
+                            </div>
+                            <div class="pricing-body">
+                                <p class="price">Desde $1,709</p>
+                                <ul>
+                                    <li>Reparación de placas base</li>
+                                    <li>Recuperación de datos</li>
+                                    <li>Reparación de componentes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-cta">
+                    <a href="contacto.html" class="btn btn-primary">Solicitar reparación</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mantenimiento" class="service-section">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="service-title">
+                    <h2>Mantenimiento</h2>
+                    <p>Optimiza el rendimiento y prolonga la vida de tus equipos</p>
+                </div>
+            </div>
+            
+            <div class="service-content">
+                <div class="service-description">
+                    <p>Un mantenimiento preventivo adecuado puede evitar la mayoría de los problemas graves en tus dispositivos. En TechStore ofrecemos servicios de mantenimiento periódico para asegurar que tus equipos funcionen siempre en condiciones óptimas.</p>
+                    <p>Ya sea para equipos personales o empresariales, contamos con planes adaptados a tus necesidades. Evita costosas reparaciones y pérdidas de datos con nuestros servicios de mantenimiento.</p>
+                </div>
+                
+                <div class="service-features">
+                    <div class="service-feature">
+                        <i class="fas fa-broom"></i>
+                        <h3>Limpieza de Hardware</h3>
+                        <p>Eliminación de polvo y suciedad del interior de tus equipos para prevenir sobrecalentamiento y fallos prematuros.</p>
+                    </div>
+                    <div class="service-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Optimización de Software</h3>
+                        <p>Actualización de sistemas, eliminación de archivos innecesarios y configuración para un rendimiento óptimo.</p>
+                    </div>
+                    <div class="service-feature">
+                        <i class="fas fa-sync"></i>
+                        <h3>Mantenimiento Preventivo</h3>
+                        <p>Revisiones periódicas para detectar y solucionar problemas antes de que afecten al funcionamiento de tus equipos.</p>
+                    </div>
+                </div>
+                
+                <div class="service-plans">
+                    <h3>Planes de Mantenimiento</h3>
+                    <div class="plans-table">
+                        <div class="plan-item">
+                            <div class="plan-header">
+                                <h4>Básico</h4>
+                            </div>
+                            <div class="plan-body">
+                                <p class="price">$569 <span>/ trimestral</span></p>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Limpieza física</li>
+                                    <li><i class="fas fa-check"></i> Actualización de software</li>
+                                    <li><i class="fas fa-check"></i> Chequeo básico de hardware</li>
+                                    <li><i class="fas fa-times"></i> Copia de seguridad</li>
+                                    <li><i class="fas fa-times"></i> Soporte remoto</li>
+                                </ul>
+                                <a href="contacto.html" class="btn btn-outline">Contratar</a>
+                            </div>
+                        </div>
+                        <div class="plan-item featured">
+                            <div class="plan-header">
+                                <h4>Profesional</h4>
+                                <span class="plan-badge">Popular</span>
+                            </div>
+                            <div class="plan-body">
+                                <p class="price">$949 <span>/ trimestral</span></p>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Limpieza física avanzada</li>
+                                    <li><i class="fas fa-check"></i> Actualización de software</li>
+                                    <li><i class="fas fa-check"></i> Diagnóstico completo</li>
+                                    <li><i class="fas fa-check"></i> Copia de seguridad básica</li>
+                                    <li><i class="fas fa-check"></i> Soporte remoto (2h/mes)</li>
+                                </ul>
+                                <a href="contacto.html" class="btn btn-primary">Contratar</a>
+                            </div>
+                        </div>
+                        <div class="plan-item">
+                            <div class="plan-header">
+                                <h4>Empresarial</h4>
+                            </div>
+                            <div class="plan-body">
+                                <p class="price">Personalizado</p>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Mantenimiento integral</li>
+                                    <li><i class="fas fa-check"></i> Actualización programada</li>
+                                    <li><i class="fas fa-check"></i> Auditoría de seguridad</li>
+                                    <li><i class="fas fa-check"></i> Copias de seguridad avanzadas</li>
+                                    <li><i class="fas fa-check"></i> Soporte remoto ilimitado</li>
+                                </ul>
+                                <a href="contacto.html" class="btn btn-outline">Solicitar presupuesto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-testimonials">
+                    <h3>Lo que dicen nuestros clientes</h3>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Desde que contratamos el plan de mantenimiento empresarial, los problemas informáticos en nuestra oficina se han reducido drásticamente. Un servicio altamente recomendable."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/testimonios/empresa1.webp" alt="Pedro Martínez">
+                            <div>
+                                <h4>Pedro Martínez</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"El servicio de mantenimiento preventivo nos ha ahorrado muchos dolores de cabeza. Muy profesionales y eficientes."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/testimonios/empresa2.jpg" alt="María González">
+                            <div>
+                                <h4>María González</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Excelente relación calidad-precio en su plan profesional. Resuelven cualquier incidencia en cuestión de horas."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/testimonios/empresa3.jpg" alt="Roberto Fernández">
+                            <div>
+                                <h4>Roberto Fernández</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="web" class="service-section">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="service-title">
+                    <h2>Desarrollo Web</h2>
+                    <p>Diseñamos tu presencia online con las últimas tecnologías</p>
+                </div>
+            </div>
+            
+            <div class="service-content">
+                <div class="service-description">
+                    <p>En TechStore no solo nos ocupamos de tus equipos, también te ayudamos a construir una presencia digital efectiva. Nuestro equipo de desarrollo web crea sitios a medida que representan fielmente tu marca y cumplen tus objetivos comerciales.</p>
+                    <p>Desde sitios corporativos hasta tiendas online, desarrollamos soluciones adaptadas a tus necesidades con diseño responsivo, optimización SEO y experiencia de usuario intuitiva.</p>
+                </div>
+                
+                <div class="service-features">
+                    <div class="service-feature">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Diseño Web</h3>
+                        <p>Creamos sitios web atractivos y funcionales adaptados a todos los dispositivos, con un diseño moderno y profesional.</p>
+                    </div>
+                    <div class="service-feature">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>E-Commerce</h3>
+                        <p>Desarrollamos tiendas online completas con catálogo de productos, carrito de compra, pasarelas de pago y gestión de inventario.</p>
+                    </div>
+                    <div class="service-feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>SEO y Marketing Digital</h3>
+                        <p>Optimizamos tu sitio para buscadores y ofrecemos estrategias de marketing digital para aumentar tu visibilidad online.</p>
+                    </div>
+                </div>
+                
+                <div class="web-process">
+                    <h3>Nuestro proceso de trabajo</h3>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Análisis</h4>
+                                <p>Estudiamos tus necesidades, objetivos y público objetivo para definir la mejor estrategia para tu proyecto.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Diseño</h4>
+                                <p>Creamos maquetas visuales de tu sitio para que puedas ver cómo quedará antes de comenzar la programación.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Desarrollo</h4>
+                                <p>Implementamos el diseño con las últimas tecnologías, asegurando un código limpio, seguro y optimizado.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Pruebas</h4>
+                                <p>Testamos minuciosamente el sitio para garantizar su correcto funcionamiento en todos los dispositivos y navegadores.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>Lanzamiento</h4>
+                                <p>Publicamos tu sitio web y te ayudamos a gestionar el dominio, hosting y otras configuraciones necesarias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-cta">
+                    <h3>¿Listo para impulsar tu presencia digital?</h3>
+                    <p>Contáctanos hoy mismo para una consulta gratuita sobre tu proyecto.</p>
+                    <a href="contacto.html" class="btn btn-primary">Solicitar presupuesto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Preguntas frecuentes sobre nuestros servicios</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuál es el tiempo de entrega para una reparación?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El tiempo de entrega depende del tipo de avería y la disponibilidad de piezas. En reparaciones básicas, solemos entregar en 24-48 horas. Para reparaciones más complejas, el plazo puede variar entre 3-5 días laborables. Siempre te informaremos del tiempo estimado al presentar el presupuesto.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Ofrecen servicios de mantenimiento a domicilio?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, disponemos de servicio a domicilio para mantenimiento y algunas reparaciones básicas. Este servicio tiene un coste adicional dependiendo de la ubicación. Para empresas con contratos de mantenimiento, incluimos visitas periódicas sin coste adicional.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuánto cuesta aproximadamente una página web?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Los precios varían según la complejidad y funcionalidades requeridas. Un sitio web básico informativo puede comenzar desde $11,400, mientras que una tienda online o plataforma con funcionalidades avanzadas puede superar los $28,500. Te ofrecemos un presupuesto detallado tras analizar tus requisitos específicos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Qué garantía ofrecen en sus servicios?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Todos nuestros servicios de reparación tienen una garantía de 6 meses. Los desarrollos web incluyen 3 meses de soporte técnico y correcciones sin coste adicional. Para los servicios de mantenimiento, garantizamos el cumplimiento de los acuerdos de servicio establecidos en el contrato.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TechStore</h3>
+                    <p>Tu tienda de confianza para tecnología y servicios informáticos.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="acerca.html">Acerca de</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Av de la Marina 205, Francisco Villa</li>
+                        <li><i class="fas fa-phone"></i> 6699946487</li>
+                        <li><i class="fas fa-envelope"></i> emozp@hotmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

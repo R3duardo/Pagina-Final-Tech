@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con TechStore - Tu tienda de tecnología y servicios informáticos">
+    <title>Contacto - TechStore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>TechStore</h1>
+                </a>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                    <li class="dropdown">
+                        <a href="productos.html">Productos <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="productos.html#tarjetas">Tarjetas Gráficas</a></li>
+                            <li><a href="productos.html#perifericos">Periféricos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="servicios.html">Servicios <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicios.html#reparacion">Reparación</a></li>
+                            <li><a href="servicios.html#mantenimiento">Mantenimiento</a></li>
+                            <li><a href="servicios.html#web">Desarrollo Web</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contacto</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Inicio</a> / <span>Contacto</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Información de Contacto</h2>
+                    <p>Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros a través de cualquiera de los siguientes medios o utiliza el formulario de contacto.</p>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Dirección</h3>
+                            <p>Av. de la Marina<br>25330, Mazatlan<br>Sinaloa, Mexico</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Teléfono</h3>
+                            <p>+52 669 994 6487</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>info@techstore.com</p>
+                            <p>emozp@hotmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horario</h3>
+                            <p>Lunes - Viernes: 9:00 - 20:00</p>
+                            <p>Sábados: 10:00 - 14:00</p>
+                            <p>Domingos: Cerrado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Síguenos en Redes Sociales</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Envíanos un Mensaje</h2>
+                    <p>Completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
+                    
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/mrbqvwyd" method="POST">    
+                        <input type="hidden" name="_to" value="emozp@hotmail.com">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde TechStore">
+                        <input type="hidden" name="_next" value="#success">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo <span class="required">*</span></label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="_replyto" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto">Asunto <span class="required">*</span></label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="mensaje">Mensaje <span class="required">*</span></label>
+                            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="privacidad" name="privacidad" required>
+                                <label for="privacidad">He leído y acepto la <a href="#">política de privacidad</a> <span class="required">*</span></label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Ubicación</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14640.744!2d-106.4205294!3d23.2031102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86929d0c0e5891d5%3A0x7d1234567890abcd!2sMarina%20Mazatl%C3%A1n%2C%20Mazatl%C3%A1n%2C%20Sin.%2C%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1640995200000!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="directions">
+                <h3>Cómo llegar</h3>
+                <div class="transportation-options">
+                    <div class="transport-option">
+                        <i class="fas fa-bus"></i>
+                        <h4>Transporte Público</h4>
+                        <p>Autobuses urbanos hacia la zona de Marina</p>
+                    </div>
+                    <div class="transport-option">
+                        <i class="fas fa-taxi"></i>
+                        <h4>Taxi / Uber</h4>
+                        <p>Servicio disponible las 24 horas hacia Marina Mazatlán</p>
+                    </div>
+                    <div class="transport-option">
+                        <i class="fas fa-car"></i>
+                        <h4>Automóvil</h4>
+                        <p>Estacionamiento disponible en Marina Mazatlán</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas frecuentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuál es el tiempo de respuesta a las consultas?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Generalmente respondemos a todas las consultas en un plazo máximo de 24 horas laborables. Para consultas urgentes, recomendamos llamar directamente a nuestro teléfono de atención al cliente.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Puedo solicitar una visita técnica a domicilio?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos servicios técnicos a domicilio. Puedes solicitarlo a través del formulario de contacto indicando "Visita técnica" en el asunto y proporcionando tu dirección y una breve descripción del problema.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cómo puedo realizar un seguimiento de mi reparación?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Al dejar tu equipo para reparación, recibirás un número de seguimiento. Puedes consultar el estado de tu reparación en nuestra web introduciendo este número o contactando con nuestro servicio de atención al cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TechStore</h3>
+                    <p>Tu tienda de confianza para tecnología y servicios informáticos.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="acerca.html">Acerca de</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Av de la Marina 205, Francisco Villa</li>
+                        <li><i class="fas fa-phone"></i> 6699946487</li>
+                        <li><i class="fas fa-envelope"></i> emozp@hotmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            let valid = true;
+            const requiredFields = this.querySelectorAll('[required]');
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    valid = false;
+                    field.classList.add('invalid');
+                    field.style.borderColor = '#e74c3c';
+                } else {
+                    field.classList.remove('invalid');
+                    field.style.borderColor = '';
+                }
+            });
+            
+            const email = document.getElementById('email');
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email.value && !emailPattern.test(email.value)) {
+                valid = false;
+                email.classList.add('invalid');
+                email.style.borderColor = '#e74c3c';
+            }
+            
+            if (!valid) {
+                event.preventDefault();
+                alert('Por favor, completa correctamente todos los campos obligatorios.');
+                return false;
+            }
+            
+            const submitBtn = this.querySelector('.btn-primary');
+            submitBtn.textContent = 'Enviando...';
+            submitBtn.disabled = true;
+            
+            return true;
+        });
+    </script>
+</body>
+</html> 
