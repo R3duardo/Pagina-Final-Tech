@@ -1,5 +1,109 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Menú móvil
+    // ===== FUNCIONALIDADES MODERNAS AÑADIDAS =====
+    
+    // Header scroll effect
+    const header = document.querySelector('header');
+    let lastScrollY = window.scrollY;
+    
+    function handleScroll() {
+        const currentScrollY = window.scrollY;
+        
+        // Añadir clase 'scrolled' cuando se hace scroll
+        if (currentScrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        
+        // Ocultar/mostrar header al hacer scroll
+        if (currentScrollY > lastScrollY && currentScrollY > 200) {
+            header.style.transform = 'translateY(-100%)';
+        } else {
+            header.style.transform = 'translateY(0)';
+        }
+        
+        lastScrollY = currentScrollY;
+    }
+    
+    // Intersection Observer para animaciones de entrada
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-in');
+                
+                // Animar elementos hijos con delay
+                const children = entry.target.querySelectorAll('.benefit-card, .service-card');
+                children.forEach((child, index) => {
+                    setTimeout(() => {
+                        child.classList.add('animate-in');
+                    }, index * 100);
+                });
+            }
+        });
+    }, observerOptions);
+    
+    // Observar elementos para animaciones (sin product-grid)
+    const animateElements = document.querySelectorAll('.benefits-grid, .services-grid, .testimonials');
+    animateElements.forEach(el => observer.observe(el));
+    
+    // Parallax effect removido por problemas de UX
+    
+    // Smooth counter animation
+    function animateCounter(element, target, duration = 2000) {
+        let start = 0;
+        const increment = target / (duration / 16);
+        
+        function updateCounter() {
+            start += increment;
+            if (start < target) {
+                element.textContent = Math.floor(start);
+                requestAnimationFrame(updateCounter);
+            } else {
+                element.textContent = target;
+            }
+        }
+        updateCounter();
+    }
+    
+    // Aplicar contador a elementos con data-counter
+    const counters = document.querySelectorAll('[data-counter]');
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = parseInt(entry.target.dataset.counter);
+                animateCounter(entry.target, target);
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    });
+    
+    counters.forEach(counter => counterObserver.observe(counter));
+    
+    // Scroll throttling para mejor rendimiento
+    let ticking = false;
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(updateScroll);
+            ticking = true;
+        }
+    }
+    
+    function updateScroll() {
+        handleScroll();
+        setActiveLink();
+        ticking = false;
+    }
+    
+    window.addEventListener('scroll', requestTick);
+    
+    // ===== FUNCIONALIDADES ORIGINALES MEJORADAS =====
+    
+    // Menú móvil mejorado
     const menuToggle = document.querySelector('.menu-toggle');
     const navbar = document.getElementById('navbar');
     
@@ -42,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Funcionalidad para FAQs (Acordeón)
+    // Funcionalidad para FAQs (Acordeón) mejorada
     const faqItems = document.querySelectorAll('.faq-item');
     
     faqItems.forEach(item => {
@@ -75,13 +179,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Testimonial slider (carrusel simple)
+    // Testimonial slider mejorado
     const testimonials = document.querySelectorAll('.testimonial');
     let currentTestimonial = 0;
     
     function showTestimonial(index) {
         testimonials.forEach((testimonial, i) => {
             testimonial.style.display = i === index ? 'block' : 'none';
+            testimonial.style.opacity = i === index ? '1' : '0';
+            testimonial.style.transform = i === index ? 'translateX(0)' : 'translateX(20px)';
         });
     }
     
@@ -94,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000);
     }
     
-    // Navegación suave al hacer clic en enlaces de anclaje
+    // Navegación suave mejorada
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             if (this.getAttribute('href') !== '#') {
@@ -123,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Destacar el enlace activo en la navegación
+    // Destacar el enlace activo en la navegación mejorado
     function setActiveLink() {
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('#navbar ul li a');
@@ -146,10 +252,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    window.addEventListener('scroll', setActiveLink);
-    
-    setActiveLink();
 
+    // ===== FUNCIONALIDADES DE MODAL MEJORADAS =====
+    
     function openModal(modalId) {
         const modal = document.getElementById(modalId);
         if (modal) {
@@ -164,7 +269,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Función para cerrar modal
     function closeModal(modal) {
         modal.style.position = 'fixed';
         modal.style.top = '0';
